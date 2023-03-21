@@ -1,24 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8" />
+<title>Ejemplo de selectores avanzados</title>
 <style>
-div {
- background-color: rgba(0, 0, 0, 0.631);
- width: 300px;
- border: 6px solid rgb(90, 92, 136);
- padding: 50px;
- margin: 20px;
- color: antiquewhite;
- border-radius: 10px;
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
+
+table, tr, th, td {
+  border: 1px solid #333;
+  line-height: 2em;
+}
+
+th {
+  background-color: #F5F5F5;
+  padding: 0 .5em
+}
+
+td {
+  padding: 0 .3em
+}
+
+th.euro:hover {
+  background: #E6F3FF url(./euro\ 1.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em
+}
+
+th.dolar:hover {
+  background: #E6F3FF url(./dolar\ 1.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em
+}
+
+th.libra:hover {
+  background: #E6F3FF url(./libra\ 1.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em
+}
+
+th.yen:hover {
+  background: #E6F3FF url(./yen\ 1.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em
+}
+
+tr:nth-child(n+1) td {
+  text-align: right;
+}
+
+tr:nth-child(2n) {
+  background-color: #FFFFCC
+}
+tr:hover {
+  background: #FFFF66
+}
+
+
 </style>
 </head>
 <body>
-<div>ridiculus mus. Aliquam ut scelerisque tellus. Etiam nec placerat urna, id viverra purus. Nullam aliquam arcu quis accumsan fermentum. Quisque elementum urna a nunc ornare malesuada. Aliquam ac congue lorem, eu porttitor nisi. Vestibulum vitae accumsan nibh. Aliquam fringilla in neque sed facilisis.</div>
-<div>ridiculus mus. Aliquam ut scelerisque tellus. Etiam nec placerat urna, id viverra purus. Nullam aliquam arcu quis accumsan fermentum. Quisque elementum urna a nunc ornare malesuada. Aliquam ac congue lorem, eu porttitor nisi. Vestibulum vitae accumsan nibh. Aliquam fringilla in neque sed facilisis.</div>
-<div>ridiculus mus. Aliquam ut scelerisque tellus. Etiam nec placerat urna, id viverra purus. Nullam aliquam arcu quis accumsan fermentum. Quisque elementum urna a nunc ornare malesuada. Aliquam ac congue lorem, eu porttitor nisi. Vestibulum vitae accumsan nibh. Aliquam fringilla in neque sed facilisis.</div>
-<div>ridiculus mus. Aliquam ut scelerisque tellus. Etiam nec placerat urna, id viverra purus. Nullam aliquam arcu quis accumsan fermentum. Quisque elementum urna a nunc ornare malesuada. Aliquam ac congue lorem, eu porttitor nisi. Vestibulum vitae accumsan nibh. Aliquam fringilla in neque sed facilisis.</div>
-<div>ridiculus mus. Aliquam ut scelerisque tellus. Etiam nec placerat urna, id viverra purus. Nullam aliquam arcu quis accumsan fermentum. Quisque elementum urna a nunc ornare malesuada. Aliquam ac congue lorem, eu porttitor nisi. Vestibulum vitae accumsan nibh. Aliquam fringilla in neque sed facilisis.</div>
-
+<table>
+  <tr>
+    <th>Cambio</th>
+    <th>Compra</th>
+    <th>Venta</th>
+    <th>Máximo</th>
+    <th>Mínimo</th>
+  </tr>
+  <tr>
+    <th class="euro">Euro/Dolar</th>
+    <td>1.25</td>
+    <td>1.25</td>
+    <td>1.25</td>
+    <td>1.24</td>
+  </tr>
+  <tr>
+    <th class="dolar">Dolar/Yen</th>
+    <td>119.01</td>
+    <td>119.05</td>
+    <td>119.82</td>
+    <td>119.82</td>
+  </tr>
+  <tr>
+    <th class="libra">Libra/Dolar</th>
+    <td>1.86</td>
+    <td>1.86</td>
+    <td>1.86</td>
+    <td>1.85</td>
+  </tr>
+  <tr>
+    <th class="yen">Yen/Euro</th>
+    <td>0.67</td>
+    <td>0.67</td>
+    <td>0.66</td>
+    <td>0.67</td>
+  </tr>
+</table>
 </body>
-</html>
