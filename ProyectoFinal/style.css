@@ -100,7 +100,8 @@ p{
     font-size: 80px;
 }
 #contact{
-    padding-left: 20%;
+    margin-right: 35%;
+    margin-left: 16.5%;
 }
 #helpB{
     margin-right: 5%;
@@ -113,5 +114,57 @@ p{
 }
 #contentaspirantes{
     margin-left: 10%;
+    margin-top: 5%;
+}
+#cover3{
+    background-image: url(./img/fondo3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#gruposimg{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#cover4{
+    width: 90%;
+}
+#contentH{
+    width: 80%;
+    margin-left: 17%;
+    margin-top: 3% ;
+    display: flex;
+}
+#hcontenttext{
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 5%;
+    width: 40%;
+}
+#T4{
+    width: 100%;
+    font-size: 80px;
+    color: white;
+    background-color: #0D99FF;
+    margin-top: 5%;
+    text-align: center;
+}
+#form{
+    border-top: black 2px solid;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+form{
+    width: 30%;
+    margin-left: 30%;
+}
+input, textarea{
+    width: 100%;
+}
+#test{
+    width: 80%;
+    margin-left: 7%;
     margin-top: 5%;
 }
